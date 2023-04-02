@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8" />
+    <title>Joyful Ballons</title>
+    <link href="jb_grids.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+   <header>
+       <img src="joyfulballons.png" alt="Joyful Ballons" />
+       <nav class="horizontalNavigation">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#">Selection</a></li>
+             <li><a href="#">Specials</a></li>
+             <li><a href="contactform.html">Contact</a></li>
+          </ul>
+       </nav>
+       <h1>Joyful Ballons</h1>
+       <h2>12345 Fake St.<br> Nowhere, California 54321</h2>
+       <br>
+       <h2>Store Hours:</h2>
+       <h2>Monday-Saturday: 9:00am-6:00pm <br> Sunday: CLOSED</h2>
+       <br>
+       <br>
+    </header>
+    
+    <article>
+       <h1>Customer Information</h1>
+       <form id="form" action="http://www.example.com/form" method="post">
+         <fieldset id="custInfo">
+            <legend>Required information is marked by an asterisk (*)</legend>
+            <div class="formRow">
+               <label for="name">Full name*</label>
+               <input name="custName" id="name" type="text" placeholder="first and last name" required />
+            </div>
+               
+            <div class="formRow">
+               <label for="street">Street address</label>
+               <input name="custStreet" id="street" type="text" />
+            </div>
+             
+            <div class="formRow">
+               <label for="city">City</label>
+               <input name="custCity" id="city" type="text" value="Cerritos" />
+            </div>
+             
+            <div class="formRow">
+               <label for="state">State</label>
+               <input name="custState" id="state" type="text" value="CA" />
+            </div>
+             
+            <div class="formRow">
+               <label for="zip">Postal code*</label>
+               <input name="custZip" id="zip" type="tel" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(-\d{4})?$" />
+             </div>
+             
+            <div class="formRow">
+               <label for="phone">Phone number*</label>
+               <input name="custPhone" id="phone" type="text" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            </div>
+             
+            <div class="formRow">
+               <label for="mail">E-mail*</label>
+               <input name="custEmail" id="mail" type="email" placeholder="example@gmail.com" required />
+            </div>
+            
+            <div class="formRow">
+               <label for="info">Where did you hear about us?<br />(select all that apply)</label>
+               <select name="infoSrc" id="info" size="5" multiple>
+                  <option value="instagram">Instagram</option>
+                  <option value="tiktok">TikTok</option>
+                  <option value="pinterest">Pinterest</option>
+                  <option value="word">Word of Mouth</option>
+                  <option value="other">Other</option>
+                </select> 
+            </div>
+                      
+             <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+             <label for="mailCB">Add me to your mailing list for great coupons and specials!</label>
+         </fieldset>
+         <br> 
+         <br>
+       <fieldset id="eventInfo">
+       <legend>Event Information</legend>
+       <div class="formRow">
+          <label for="event">Date of event:*</label>
+          <input name="eventDate" id="event" type="date" />
+       </div>
+       
+       <div class="formRow">
+          <label for="start">Event start time:*</label>
+          <input name="eventStart" id="start" type="time" />
+       </div>
+       
+        <div class="formRow">
+           <label for="end">Event end time:*</label>
+           <input name="eventEnd" id="end" type="time" />
+        </div>
+        
+        <div class="formRow">
+           <label for="address">Event address*</label>
+           <input name="eventAddress" id="address" type="text" placeholder="example@gmail.com" />
+        </div>
+         
+        <div class="formRow">
+           <label for="inout">Where will the event primarily be?</label>
+              <input name="eventinOut" id="inout" type="text" list="eventinOut" /> 
+                 <datalist id="eventinOut">
+                   <option value="Indoor">
+                   <option value="Outdoor">
+                 </datalist>
+        </div>
+        
+        <div class="formRow">
+           <label for="budget">Estimated budget for your event</label>
+           <input name="budget" id="budget" type="text" />
+        </div>
+
+           <label for="commBox">Do you have a specific them and/or color palette?</label>
+           <textarea name="custTheme" id="commBox"></textarea>
+           
+           <label for="commBox">Tell us more about your event!</label>
+           <textarea name="custEvent" id="commBox2"></textarea>
+       </fieldset>
+        
+        <div id="buttons">
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />
+         </div>
+      </form>
+    </article>
+    
+   <aside>
+      <h1>Designs and Ideas</h1>
+      <dl>
+       <dt>Clusters and Flowers</dt>
+       <dd><img src="image4.jpeg" alt="ballons"/></dd>
+       <dt>Free standing</dt>
+       <dd><img src="image5.jpeg" alt="ballons"/>e</dd>
+       <dt>Birthdays</dt>
+       <dd><img src="image6.jpeg" alt="ballons"/><dd>
+      </dl>
+   </aside>
+      
+   <footer>
+    <a href="joytfulballons@example.com">joyfulballons@example.com</a> <br> 555-555-5555
+   </footer>
+
+</body>
+</html>
+    
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+    

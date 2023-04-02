@@ -1,0 +1,322 @@
+@charset "utf-8";
+
+    
+/* Structural Styles */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section {
+    display: block;
+}
+
+
+
+/* Typographic Styles */
+
+address, article, aside, blockquote, body, cite,
+div, dl, dt, dd, em, figcaption, figure, footer,
+h1, h2, h3, h4, h5, h6, header, html, img,
+li, main, nav, o1, p, section, span, ul {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+
+/* HTML and Body Styles */
+
+html {
+   background-color: lightblue;
+}
+
+/* Page Body Styles */
+body {
+   margin-left: auto;
+   margin-right: auto;
+   width: 95%;
+   max-width: 95%;
+   min-width: 95%;
+   background-color: lightpink;
+   font-family: Georgia, serif;
+}
+
+/* Page Header Styles */
+body > header > img {
+   display: block;
+   width: 100%;
+   float: left;
+}
+
+body > header > nav.horizontalNavigation li {
+   width: 25%;
+}
+
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontalNavigation > ul > li {
+   display: block;
+   float: left;
+}
+
+nav.horizontalNavigation a {
+   background-color: plum;
+   display: block;
+   font-family: Georgia, serif;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   text-align: center;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: black;
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: lightblue;
+} 
+
+/* Heading Styles */
+
+h1 {
+   text-indent: 1em;
+}
+
+body > header h1 {
+   font-size: 2.4em;
+   line-height: 2.4em;
+   font-family: Georgia, serif;
+   letter-spacing: 0.3em;
+   text-align: center;
+   font-weight: normal;
+   color: black;
+}
+
+body > header h2 {
+    font-size: 1em;
+    line-height: 1em;
+    font-family: Georgia, serif;
+    letter-spacing: 0.3em;
+    text-align: center;
+    font-weight: normal;
+    color: black;
+}
+body > article > h1, body > section > h1, body > aside > h1, body > section > article > h1 {
+   font-family: Georgia, serif;
+   padding: 0.5em 0;
+}
+
+body > article > h1, body > section > h1, body > aside > h1 {
+   font-size: 1.3em;
+   background-color: plum;
+   color: black;
+}
+
+
+section > article > h1 {
+    font-size: 1.1em;
+}
+
+
+/* Paragraph Styles */
+
+p {
+   margin: 1em;
+   font-size: 0.9em;
+}
+
+/* Left Column Styles */
+
+img {
+   width: 100%;
+   display: block;
+}
+
+
+/* Right Column Styles */
+
+aside {
+   background-color: plum;
+   padding-bottom: 2em;
+}
+
+
+aside > h1 {
+   text-align: center;
+   background-color: plum;
+   color: palevioletred;
+}
+
+dl {
+   font-size: 0.9em;
+}
+
+dl > dt {
+   color: black;
+   margin: 1em;
+   font-family: Georgia, serif;
+}
+
+dl > dd {
+   margin: 0 1em 0 1em;
+   color: palevioletred;
+   font-family: Georgia, serif;
+}
+
+/* Form Layout Styles */
+
+form#survey {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form#survey > fieldset {
+    background-color: plum;
+    border-radius: 20px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    padding: 10px;
+    margin: 10px;
+}
+
+div.formRow {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 0px;
+}
+
+div.formRow > * {
+    flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+legend {
+    background-color: rgb(179, 20, 25);
+    color: white;
+    padding: 5px;
+}
+
+/* Text Area Styles */
+
+textarea {
+   margin-top: 10px;
+   height: 100px;
+   width:  95%;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpine {
+   flex: 0 0 50px;    
+}
+
+/* Form Button Styles */
+
+div#buttons {
+   text-align: center;
+    width: 100%;
+}
+
+input [type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid, 
+input#event:focus:valid,
+input#start:focus:valid,
+input#end:focus:valid,
+input#address:focus:valid {
+    background: rgb(220, 255, 220) url(rb_valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid,
+input#event:focus:invalid,
+input#start:focus:invalid,
+input#end:focus:invalid,
+input#address:focus:invalid {
+    background: rgb(255, 232, 233) url(rb_invalid.png) bottom right/contain no-repeat;
+}
+
+
+/* Footer Styles */
+
+footer {
+   color: black;
+   background-color: plum;
+   font-size: 0.9em;
+   padding: 1em 0;
+   text-align: center;
+}
+
+/* Grid Styles for Page Body */
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "header   header"
+                         "intro    aside"
+                         "articles aside"
+                         "footer   footer";
+    grid-column-gap: 15px;
+}
+
+body > header {
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+body > article {grid-area: intro;}
+body > aside {grid-area: aside;}
+body > section {grid-area: articles;}
+body > footer {grid-area: footer;}
+
+/* Grid Styles for Nested Grid */
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+section > h1 {
+    grid-area: 1/1/2/3;
+}
+
+
+body > * {
+    outline: 2px dashed red;
+}
+
+section > * {
+    outline: 2px dashed blue;
+}
